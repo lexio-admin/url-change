@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexio Has Moved!</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        :root {
+            /* Light Theme Colors (from your styles.css) */
+            --color-primary: #0077B6;
+            --color-primary-shadow: #016499;
+            --color-secondary: #015170;
+            --color-accent: #78B2D2;
+            --color-surface-highlight: #E0F0FF;
+            --color-success: rgb(39, 220, 57);
+            --color-error: rgb(252, 49, 49);
+            --color-bgColor: #F0F1F3;
+            --color-red: #D25E47;
+            --color-red-dark: #C65139;
+            --color-red-darkest: #B04C38;
+            --color-text-primary: #262626;
+            --color-text-secondary: #6b7280;
+            --color-border-dark: #9CA3AF;
+            --color-border: #D9D9D9;
+            --color-surface: #DDDDDD;
+            --color-surface-dark: #C8C8C8;
+            --color-card: #FFFFFF;
+        }
+
+        /* Base Styles */
+        * {
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            /* Keep text selectable on this informational page */
+            -webkit-user-select: text;
+            -ms-user-select: text;
+            user-select: text;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            overscroll-behavior: none;
+            background-color: var(--color-bgColor);
+            color: var(--color-text-primary);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background-color: var(--color-card);
+            padding: 2.5rem 3rem;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        #logo {
+            width: 70px;
+            height: 70px;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            color: var(--color-primary);
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1rem;
+            color: var(--color-text-secondary);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        p strong {
+            color: var(--color-text-primary);
+            font-weight: 600;
+        }
+
+        p.new-domain-highlight {
+            margin-top: 1.5rem;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        p.new-domain-highlight a {
+            color: var(--color-primary);
+            font-weight: 700;
+            text-decoration: none;
+            border-bottom: 2px solid var(--color-accent);
+            transition: color 0.2s ease, border-color 0.2s ease;
+        }
+
+        p.new-domain-highlight a:hover {
+            color: var(--color-secondary);
+            border-color: var(--color-secondary);
+        }
+
+        .redirect-button {
+            display: inline-block; /* Important for styling the link as a button */
+            padding: 14px 32px;
+            background-color: var(--color-primary);
+            color: var(--color-card);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 119, 182, 0.2);
+        }
+
+        .redirect-button:hover {
+            background-color: var(--color-primary-shadow);
+            box-shadow: 0 6px 16px rgba(0, 119, 182, 0.3);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 2rem 1.5rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 0.95rem;
+            }
+            .redirect-button {
+                padding: 12px 28px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img id="logo" src="favicon.ico" alt="Lexio Logo"> <!-- Make sure this path is correct -->
+        <h1>We've Moved to a New Domain!</h1>
+        <p>
+            You've landed on our old address (<code>lexio.me</code>). Lexio has officially relocated.
+        </p>
+        <p>
+            To continue using the app and access all your study materials, please update your bookmarks.
+        </p>
+        <p class="new-domain-highlight">
+            Our new home is now at: <a href="https://lexioai.it"><strong>lexioai.it</strong></a>
+        </p>
+
+        <a href="https://lexioai.it" class="redirect-button">Go to lexioai.it</a>
+    </div>
+</body>
+</html>
